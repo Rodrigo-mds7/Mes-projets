@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #df4adf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+h2 {
+    text-align: center;
+    color: #df4adf;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.form-group div {
+    width: 48%;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+select {
+    appearance: none;
+    background-color: white !important;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+option {
+    background-color: white;
+    color: black;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #df4adf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #c73ac7;
+}
+
+/* Mise en forme des checkboxes */
+.checkbox-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 5px;
+}
+.checkbox-container label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 3px;
+    white-space: nowrap;
+}
+.checkbox-container input[type="checkbox"] {
+    transform: scale(0.7);
+}
+
+#form-ul{
+    list-style: none;
+}

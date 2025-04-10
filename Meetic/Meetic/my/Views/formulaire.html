@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/styles/formulaire.css">
+    <script src="resources/scripts/formulaire.js"></script>
+    <title>Formulaire d'Inscription</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Inscription Rencontre</h2>
+        <form>
+            <div class="form-group">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="age">Âge :</label>
+                    <input type="number" id="age" name="age" min="18" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="gender">Genre :</label>
+                    <select id="gender" name="gender" required onchange="changeBackground()">
+                        <option value="">Sélectionnez...</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="Hokage">Hokage</option>
+                        <option value="Bandit">Bandit</option>
+                        <option value="Empereur Mage">Empereur Mage</option>
+                        <option value="Roi des pirates">Roi des pirates</option>
+                        <option value="Monarche des ombres">Monarche des ombres</option>
+                        <option value="Chevalier">Chevalier</option>
+                        <option value="Télévisions">Télévisions</option>
+                        <option value="Lockheed C-130J Super Hercules">Lockheed C-130J Super Hercules</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="homme">Pokémon</option>
+                        <option value="Pokémon">Cailloux</option>
+                        <option value="Saiyan">Saiyan</option>
+                        <option value="autre">Les autres qui sont bcp moins marrants</option>
+                    </select>
+                </div>
+            </div>
+            
+            <label for="address">Adresse :</label>
+            <input type="text" id="address" name="address" required>
+            <div>
+                <label for="city">Ville :</label>
+                <input type="city" id="city" name="city" required>
+            </div>
+            
+            
+            <label for="interests">Centres d'intérêt :</label>
+            <!-- <ul id="form-ul">
+                //<li class="form-li"><input type="checkbox" name="interest" value="voyages"> Voyages</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="cinema"> Cinéma</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="technologie"> Technologie</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="lecture"> Lecture</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="sport"> Sport</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="animaux"> Animaux</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="art"> Art</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="histoire"> Histoire</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="astronomie"> Astronomie</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="science"> Science</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="cuisine"> Cuisine</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="mode"> Mode</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="danse"> Danse</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="musique"> Musique</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="automobile"> Automobile</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="jeux_videos"> Jeux vidéo</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="photographie"> Photographie</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="randonnée"> Randonnée</li>
+                <li class="form-li"><input type="checkbox" name="interest" value="plongée"> Plongée</li>
+            </ul>
+            -->
+            <label for="relationship-goals">Objectifs relationnels :</label>
+            <select id="relationship-goals" name="relationship-goals" required>
+                <option value="">Sélectionnez...</option>
+                <option value="amitié">Amitié(miskine ta pas d'amis)</option>
+                <option value="relation-serieuse">Relation sérieuse(Mariage, enfants sauf si t stériles)</option>
+                <option value="rencontres">Rencontres occasionnelles(plan Q)</option>
+            </select>
+            
+            <label for="bio">À propos de vous :</label>
+            <textarea id="bio" name="bio" rows="3" placeholder="Parlez un peu de vous..."></textarea>
+            
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+</body>
+</html>
