@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header-title">DEV FULL-STACK</h1>
+        </header>
+
+        <section class="hero">
+            <div class="content">
+                <h2>WELCOME IN MY UNIVERSE</h2>
+                <p style="margin: 1.5rem 0; line-height: 1.6;">
+                    Creer tout types de site et app, c'est ça mon kiff. 
+                    Je suis un jeune étudiant dans une formation qui se nomme ma WAC ou plus préscisément la Web Académie.
+                </p>
+                <button class="neon-button">Mes Projets →</button>
+            </div>
+
+            <div class="profile-card">
+                <img src="profile4.png" alt="Profile">
+            </div>
+        </section>
+
+        <div class="projects">
+            <div class="project-card">
+                <h3 onclick="window.location.href='apropos.html'"> À Propos <i class="fa-solid fa-address-card"></i></h3>
+                <p>Souhaitez-vous en savoir davantage sur moi ? Cliquez sur "À propos" !</p>
+                   
+            </div>
+            <div class="project-card">
+                <h3 onclick="window.location.href='compétences.html'">Compétences <i class="fa-solid fa-computer"></i></h3>
+                <p>Souhaitez-vous explorer mes compétences ? Cliquez sur "Compétences" !</p>
+            </div>
+            <div class="project-card">
+                <h3 onclick="window.location.href='index.html'"> Accueil <i class="fa-solid fa-house"></i></h3>
+                <p>Souhaitez-vous revenir a l'accueil ? Cliquez sur "Accueil"</p>
+            </div>
+            <div class="project-card">
+                <h3 onclick="window.location.href='contact.html'"> Contact <i class="fa-solid fa-comments"></i></h3>
+                <p>Vous souhaitez me contacter parce que vous êtes intéressé par mes services ? Cliquez sur "Contact" !</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
